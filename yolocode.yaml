@@ -1,0 +1,16 @@
+# Yolocode configuration file
+# Define your development services and tmux session
+
+# Services configuration
+services:
+  demo:
+    command: bun run dev
+    cwd: ./demo
+    setup: bun install
+    port: 3000
+
+# Tmux configuration (optional)
+# Defaults to session 'dev' and window 'main' if not specified
+tmux:
+  session: dev
+  window: main
